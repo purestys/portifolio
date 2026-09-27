@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Pedro — desenvolvedor web, projetos, habilidades e contato.">
+  <meta name="keywords" content="desenvolvedor web, portfólio, HTML, CSS, JavaScript, React, Node.js">
+  <meta name="author" content="Pedro">
+  <meta name="theme-color" content="#ffffff">
+  <title>Pedro — Desenvolvedor Web</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Página inicial">pedro<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Sites feitos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro e escuro" title="Alternar tema">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">DESENVOLVEDOR WEB</span>
+          <h1>Transformando ideias em <span>experiências digitais.</span></h1>
+          <p>Crio sites modernos, responsivos e funcionais, combinando código limpo, design intuitivo e atenção aos detalhes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver meus projetos <span>↗</span></a>
+            <a class="btn btn-secondary" href="#contato">Entrar em contato</a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="status-dot"></i> Disponível para projetos</span>
+            <span>HTML · CSS · JavaScript</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <!-- =========================================================
+               >>> IMAGEM DE REFERÊNCIA DA CAPA
+               Troque o arquivo abaixo por qualquer imagem sua.
+               Exemplo: assets/minha-capa.jpg
+               ========================================================= -->
+          <div class="hero-image">
+            <img src="assets/capa-referencia.svg" alt="Imagem de referência da capa do portfólio">
+          </div>
+
+          <div class="code-card">
+            <div class="window-bar"><span></span><span></span><span></span></div>
+            <div class="code-line"><b>&lt;developer</b> <em>name</em>=<strong>"Pedro"</strong><b>&gt;</b></div>
+            <div class="code-line indent"><b>&lt;skills&gt;</b></div>
+            <div class="code-line indent-2">HTML / CSS / JS</div>
+            <div class="code-line indent-2">UI / UX / Responsive</div>
+            <div class="code-line indent"><b>&lt;/skills&gt;</b></div>
+            <div class="code-line"><b>&lt;/developer&gt;</b></div>
+            <div class="cursor"></div>
+          </div>
+          <div class="visual-orb orb-one"></div>
+          <div class="visual-orb orb-two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">SOBRE MIM</span>
+          <h2>Construindo na web com <span>propósito.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="profile-card reveal">
+            <!-- TROQUE o src abaixo pela sua foto -->
+            <div class="profile-photo">
+              <span>pedro</span>
+            </div>
+            <div>
+              <strong>Pedro</strong>
+              <p>Desenvolvedor Web</p>
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <!-- EDITE este texto com suas informações -->
+            <p>Sou desenvolvedor web apaixonado por transformar ideias em produtos digitais claros, rápidos e agradáveis de usar.</p>
+            <p>Atuo na criação de sites institucionais, landing pages, lojas virtuais e experiências interativas, sempre pensando em responsividade, acessibilidade e performance.</p>
+            <div class="areas">
+              <span>Desenvolvimento Front-end</span>
+              <span>UI/UX</span>
+              <span>Sites responsivos</span>
+              <span>Interfaces interativas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <span class="eyebrow">PORTFÓLIO</span>
+            <h2>Sites <span>feitos.</span></h2>
+          </div>
+          <p>Alguns projetos para mostrar diferentes estilos, objetivos e tecnologias.</p>
+        </div>
+
+        <!--
+          ============================================================
+          >>> PROJETOS
+          O único projeto inicial é "blank".
+          Para alterar ou adicionar sites, edite o array "projects"
+          no arquivo script.js.
+          ============================================================
+        -->
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Os projetos são carregados automaticamente pelo script.js -->
+        </div>
+
+        <button class="btn btn-secondary more-btn hidden" id="moreProjects">Ver mais projetos</button>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">TECNOLOGIAS</span>
+          <h2>Minhas <span>habilidades.</span></h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <!-- EDITE/ADICIONE habilidades no array skills em script.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">CONTATO</span>
+          <h2>Vamos trabalhar <span>juntos?</span></h2>
+          <p>Tem uma ideia, projeto ou oportunidade? Envie uma mensagem e vamos conversar sobre como transformar isso em algo digital.</p>
+          <div class="social-links">
+            <!-- ALTERE os links abaixo -->
+            <span class="social-soon">LinkedIn <span>Em breve</span></span>
+            <a href="https://www.instagram.com/phr_144/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+            <a href="mailto:ph.eve.cris@gmail.com">E-mail <span>↗</span></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre seu projeto..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar mensagem <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#inicio">pedro<span>.</span></a>
+      <div class="footer-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <p>© <span id="year"></span> Pedro. Feito com código e criatividade.</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
